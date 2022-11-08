@@ -9,9 +9,9 @@ function crono() {
     let minutos = parseInt(min.innerHTML);
     let horas = parseInt(hor.innerHTML);
     intervalo = setInterval(()=>{
-        seg.innerHTML =+ segundos <= 10? '0' + segundos: segundos;
-        min.innerHTML =+ minutos <= 10? '0' + minutos: minutos;
-        hor.innerHTML =+ horas <= 10? '0' + horas: horas;
+        seg.innerHTML =+ segundos < 10? '0' + segundos: segundos;
+        min.innerHTML =+ minutos < 10? '0' + minutos: minutos;
+        hor.innerHTML =+ horas < 10? '0' + horas: horas;
         segundos++;
         if(segundos == 61){
             segundos = 0;
