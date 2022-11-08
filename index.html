@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="code.js"></script>
+    <style>
+        body{
+            background-color: orange;
+            color:  white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2em;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #crono{
+            text-align: center;
+        }
+        #botones{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        button{
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top:20px;
+            padding-bottom:20px;
+            border-radius:10px;
+            border-width: 3px;
+            border-color: white;
+            background-color: orange;
+            font-size: 1.5em;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header><h1>STOPWATCH</h1><h1>VANILLA JAVASCRIPT STOPWATCH</h1></head>
+    <main>
+            <div id="crono">
+                <span id="horas">00</span>:<span id="minutos">00</span>:<span id="segundos">00</span>
+            </div>
+            <div id="botones">
+                <button id="iniciar">Start</button>
+                <button id="parar">Stop</button>
+                <button id="reiniciar">Reset</button>
+            </div>
+
+    </main>
+</body>
+</html>
